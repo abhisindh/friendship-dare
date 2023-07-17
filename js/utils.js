@@ -31,8 +31,6 @@ export function showQuestion(){
         create_showQuestion();
     }else if (globals.mode == "answer"){
         answer_showQuestion();
-    }else if (globals.mode == "view"){
-        view_showQuestion();
     }
 }
 

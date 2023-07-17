@@ -77,7 +77,7 @@ function showShareLink(){
     questionElement.innerHTML = `You scored ${globals.score} out of ${globals.questions.length}. Share or go to the below link to view your answers`;
     var link = document.createElement('textarea');
     link.readOnly = true
-    link.classList.add('btn')
+    link.classList.add('sharelink')
     link.rows = 4;
     let answer_list_hash = encodeIntList(globals.answer_list);
     var newQueries = {

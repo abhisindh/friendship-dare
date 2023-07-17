@@ -69,7 +69,7 @@ function showShareLink(){
     questionElement.innerHTML = "share the below links with your friends";
     var link = document.createElement('textarea');
     link.readOnly = true
-    link.classList.add('btn')
+    link.classList.add('sharelink')
     link.rows = 4;
     let answered_hash = encodeIntList(globals.answered);
     let answer_list_hash = encodeIntList(globals.answer_list);
