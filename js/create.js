@@ -1,11 +1,12 @@
 import { resetState, createNameInput, encodeIntList, decodeIntList, updateURLWithQueries} from "./utils.js";
-import { answerButtons, globals, nextButton, questionElement } from "./script.js";
+import { answerButtons, globals, headingElement, nextButton, questionElement } from "./script.js";
 import { ALL_QUESTIONS } from "./questions.js";
 
 export function createQuizHandler(){
     resetState();
     console.log(ALL_QUESTIONS.length);
     createNameInput();
+    headingElement.innerHTML = "Create Your Friendship Dare"
 
 }
 
