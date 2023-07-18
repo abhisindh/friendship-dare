@@ -43,6 +43,13 @@ function showQuestion(){
         button.innerHTML = answer.text;
         button.dataset.no = answer.no;
         button.classList.add("btn");
+
+        const image = document.createElement("img"); // Create an <img> element
+        image.classList.add("option-image")
+        image.src = answer.image_link; // Set the image source URL
+        image.alt = "Answer Image"; // Add an alt attribute for accessibility
+        answerButtons.appendChild(image); // Append the image to the answerButtons container
+
         answerButtons.appendChild(button)
         if (answer.correct){
             button.dataset.correct = answer.correct;
