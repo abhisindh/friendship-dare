@@ -1,4 +1,4 @@
-const questions = [
+[
     {
         "id": 1,
         "question": "What is my favorite color?",
@@ -2604,23 +2604,3 @@ const questions = [
         ]
     }
 ]
-
-function removeDuplicates(jsonList) {
-    const uniqueSet = new Set();
-    const uniqueList = [];
-  
-    jsonList.forEach((json) => {
-      // Convert the JSON object to a string
-      const jsonString = JSON.stringify(json);
-  
-      // Check if the string representation is not in the Set (not a duplicate)
-      if (!uniqueSet.has(jsonString)) {
-        uniqueSet.add(jsonString);
-        uniqueList.push(json);
-      }
-    });
-  
-    return uniqueList;
-  }
-
-export const ALL_QUESTIONS = questions;
