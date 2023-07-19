@@ -89,17 +89,17 @@ function showShareLink(){
     let answer_list_hash = encodeIntList(globals.answer_list);
     var newQueries = {
         mode : "view",
-        answered : getAnswered(),
-        answer_list : answer_list_hash,
-        correct_answer : getAnswerList(),
+        a : getAnswered(),
+        b : answer_list_hash,
+        c : getAnswerList(),
         creator : getCreator(),
         friend : globals.name
     }
             
     link.innerHTML = updateURLWithQueries(newQueries);
-    console.log(decodeIntList(newQueries.answered));
-    console.log(decodeIntList(newQueries.answer_list));
-    console.log(decodeIntList(newQueries.correct_answer));
+    console.log(decodeIntList(newQueries.a));
+    console.log(decodeIntList(newQueries.b));
+    console.log(decodeIntList(newQueries.c));
 
     answerButtons.appendChild(link);
 }

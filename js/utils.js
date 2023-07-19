@@ -35,18 +35,54 @@ export function showQuestion(){
 }
 
 
-export function encodeIntList(list) {
-    console.log(list);
-    var encodedString = encodeURIComponent(list.join(','));
-    return encodedString;
-  }
+// export function encodeIntList(list) {
+//     console.log(list);
+//     var encodedString = encodeURIComponent(list.join(','));
+//     return encodedString;
+//   }
   
-export function decodeIntList(encodedString) {
-    var decodedString = decodeURIComponent(encodedString);
-    var list = decodedString.split(',').map(Number);
-    return list;
-  }
+// export function decodeIntList(encodedString) {
+//     var decodedString = decodeURIComponent(encodedString);
+//     var list = decodedString.split(',').map(Number);
+//     return list;
+//   }
   
+export function encodeIntList(intList){
+  let code = ''
+  intList.forEach(element => {
+      code += encodeInt(element)
+  });
+  return code
+}
+
+function encodeInt(integer){
+  const order = ['1', 'A', 'a', 'B', 'b', 'C', 'c', '2', 'D', 'd', 'E', 'e', 'F', 'f', 'G', '3', 'g', 'H', 'h', 'I', 'i', 'J', '4', 'j', 'K', 'k', 'L', 'l', 'M', 'm', '5', 'N', 'n', 'O', 'o', 'P', 'p', '6', 'Q', 'q', 'R', 'r', 'S', 's', 'T', '7', 't', 'U', 'u', 'V', 'v', 'W', '8', 'w', 'X', 'x', 'Y', 'y', 'Z', 'z', '9']
+
+  if (integer > 60){
+      return '-'+encodeInt(integer-60)
+  }
+  return order[integer]
+}
+
+
+
+
+export function decodeIntList(string){
+  const order = ['1', 'A', 'a', 'B', 'b', 'C', 'c', '2', 'D', 'd', 'E', 'e', 'F', 'f', 'G', '3', 'g', 'H', 'h', 'I', 'i', 'J', '4', 'j', 'K', 'k', 'L', 'l', 'M', 'm', '5', 'N', 'n', 'O', 'o', 'P', 'p', '6', 'Q', 'q', 'R', 'r', 'S', 's', 'T', '7', 't', 'U', 'u', 'V', 'v', 'W', '8', 'w', 'X', 'x', 'Y', 'y', 'Z', 'z', '9']
+
+  let list = []
+  let offset =0
+  for (var char of string){
+      if (char == '-'){
+          offset += 60
+      }
+      else{
+          list.push(order.indexOf(char) + offset)
+          offset = 0
+      }
+  }
+  return list
+}
 
 export function updateURLWithQueries(newQueries) {
     var url = new URL(window.location.href);

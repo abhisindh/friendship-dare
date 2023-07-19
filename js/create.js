@@ -85,8 +85,8 @@ function showShareLink(){
     let answer_list_hash = encodeIntList(globals.answer_list);
     var newQueries = {
         mode : "answer",
-        answered : answered_hash,
-        answer_list : answer_list_hash,
+        a : answered_hash,
+        b : answer_list_hash,
         creator : globals.name
     }
             
