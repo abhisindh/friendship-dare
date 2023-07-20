@@ -102,4 +102,14 @@ function showShareLink(){
     console.log(decodeIntList(newQueries.c, 5));
 
     answerButtons.appendChild(link);
+
+    var copyButton = document.createElement('button');
+    copyButton.classList.add('c-btn')
+    copyButton.textContent = 'Copy Link to Clipboard';
+    copyButton.onclick = function () {
+        navigator.clipboard.writeText(updateURLWithQueries(newQueries))
+            .then(() => alert('Copied Link to clipboard!'))
+            .catch((error) => console.error('Failed to copy:', error));
+    };
+    answerButtons.appendChild(copyButton);
 }

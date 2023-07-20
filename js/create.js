@@ -95,5 +95,15 @@ function showShareLink(){
     console.log(decodeIntList(answer_list_hash, 5));
 
     answerButtons.appendChild(link);
+
+    var copyButton = document.createElement('button');
+    copyButton.classList.add('c-btn')
+    copyButton.textContent = 'Copy to Clipboard';
+    copyButton.onclick = function () {
+        navigator.clipboard.writeText(updateURLWithQueries(newQueries))
+            .then(() => alert('Copied to clipboard!'))
+            .catch((error) => console.error('Failed to copy:', error));
+    };
+    answerButtons.appendChild(copyButton);
 }
 

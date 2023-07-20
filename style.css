@@ -100,3 +100,22 @@ body{
     border: 2px solid #222;
     margin-top: 10px;
 }
+
+
+.c-btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.c-btn:hover:not([disabled]){
+    background: #222;
+    color: #fff;
+}
