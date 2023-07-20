@@ -1,32 +1,4 @@
-// {
-//     "id": 1,
-//     "question": "What is my favorite color?",
-//     "answers": [
-//         {
-//             "text": "Blue",
-//             "correct": false,
-//             "no": 0,
-//             "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ1PWzOwzi4MpJ1gE6OXTNhWcyZJyEzcQV6O5WKGa20l_EiF22QUiSf94AXA&s"
-//         }, {
-//             "text": "Red",
-//             "correct": false,
-//             "no": 1,
-//             "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr_s8GUNgQeZIOsONrTMQFqw6z-mYARlhHg4zEeOYbGRWhTeAPPwGT_rUA8w&s"
-//         }, {
-//             "text": "Green",
-//             "correct": false,
-//             "no": 2,
-//             "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznt_TOxtvG6y27R7ReCUNyCbZBwWKrYwJMB3xY_04EwE7tzDNdupyl6j_MA&s"
-//         }, {
-//             "text": "Yellow",
-//             "correct": false,
-//             "no": 3,
-//             "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST-qmbZxEpeYBFyD4KeXuQTvtfpqjL4qhEXWksoL0-6ynkGwv1qI2M1cER-Q&s"
-//         }
-//     ]
-// },
-
-export const ALL_QUESTIONS  = [
+export const ALL_QUESTIONS  =[
     {
         "id": 1,
         "question": "What Motivates You?",
@@ -107,7 +79,7 @@ export const ALL_QUESTIONS  = [
                 "text": "Yes",
                 "no": 0,
                 "correct": false,
-                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfs8Oc4Kf5pSabTLj4LG6zuOddnCVBvTC3nztBwoBsGWQrvYkDfdtbCqY75fI&s"
+                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlGlO_gKuPkIHbYYC5W3sjSDi4Ivw1TEZDPRLTaEAbwyPqBE1mf7eJHzXd7ew&s"
             },
             {
                 "text": "No",
@@ -383,7 +355,7 @@ export const ALL_QUESTIONS  = [
                 "text": "Rugby",
                 "no": 8,
                 "correct": false,
-                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy-lgW3y2HlpXveJAzE0-5oBIYhROFMDvPCYQIV46cC9zTNmnQ3K2gG_GNGw&s"
+                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRphsusd4mfRfeywvACPKhUxJ_joC4gBR80OKqDc_zRuTXAQ0Ak9lSum8PD0wg&s"
             },
             {
                 "text": "Volleyball",
@@ -398,28 +370,28 @@ export const ALL_QUESTIONS  = [
         "question": "How tall are you?",
         "answers": [
             {
-                "text": "Above 6\u00ef\u00bf\u00bd",
+                "text": "Above 6'",
                 "no": 0,
                 "correct": false,
-                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj1UFF6UpwN07QMehr_86dtzahc1vpu-2ns_LZaqaj3IhZwuZaQErJUJjnRg&s"
+                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGpSu6FRrk2Gd493fQBigiX2BFST-PZi7SmT404S4aFPtUVCxDLZ2lq9T6lA&s"
             },
             {
-                "text": "5\u00ef\u00bf\u00bd2\u00ef\u00bf\u00bd to 5\u00ef\u00bf\u00bd6\u00ef\u00bf\u00bd",
+                "text": "5'2\" to 5'6\"",
                 "no": 1,
                 "correct": false,
-                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-oH4MGErmXM7k88eo-gTToSWKpv0uKVVbv4ufx0OMDRPymf8xOMjePpjKyA&s"
+                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXXesr_6n-kBcMEB1TtWHJDF9FGAI3FsA3DpsKOrrP5ftTJR1lnmmeUfYUPg&s"
             },
             {
-                "text": "Less Than 5\u00ef\u00bf\u00bd2\u00ef\u00bf\u00bd",
+                "text": "Less Than 5'2\"",
                 "no": 2,
                 "correct": false,
-                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbU_z28VUF1aBaT41aUxDLCryDHl7T9X_9Nu9fQGCwWSwYjuVl5NmkYaLjXd0&s"
+                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHHbOzY8eOc4bGH6uwi_sGh2j4i9Q80GrP-8FQOd-7U6OK0unBW4b5xezLNg&s"
             },
             {
-                "text": "5\u00ef\u00bf\u00bd7\u00ef\u00bf\u00bd to 5\u00ef\u00bf\u00bd10\u00ef\u00bf\u00bd",
+                "text": "5'7\" to 5'10\"",
                 "no": 3,
                 "correct": false,
-                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-zmyC8obbh4KHDJoWWQn-vNvXbT4PRLA9jJHhrwbRfspqUmpJRNFE_IjvH4c&s"
+                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxsFnjA7265rJMNU_P1hyuM-w3kR7O-QCXV-PMDIIBJlzYLQfCXYH5OKm6nJA&s"
             }
         ]
     },
@@ -467,7 +439,7 @@ export const ALL_QUESTIONS  = [
                 "text": "Very Lazy",
                 "no": 3,
                 "correct": false,
-                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0rbf1xeY3Dc24pQ2rqgB99g1bHLjwK8w_cykws2xX4MCSE7e52TjKA8gFtQ&s"
+                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb1iyybYdmpLNNbhRH4_yyrUMyqsJV0s_Kc9fU5FCVw3yhKpY8WViqr2kwwmg&s"
             },
             {
                 "text": "Eating Fast Food",
@@ -476,10 +448,10 @@ export const ALL_QUESTIONS  = [
                 "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRrQ5coz6EyEILqZil1gwoPqI0Y0ucT585rPv2sYhXz3rQq4WvNyhVKHxW2Q&s"
             },
             {
-                "text": "Forgetting People\u00ef\u00bf\u00bds Names",
+                "text": "Forgetting People's Names",
                 "no": 5,
                 "correct": false,
-                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL6It1g4AipEqCmlHoJ__76UDOF3s5hfQkURYwYArNmaVbLy_K7hf9Fair4uI&s"
+                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTCfjqAxADzX72bkBnHwaNkGmrCFPXB6qLhYXM3rmZe4lXm5I0dNEsHzgoWw&s"
             },
             {
                 "text": "Watching Too Much TV",
@@ -605,7 +577,7 @@ export const ALL_QUESTIONS  = [
                 "text": "Mobile",
                 "no": 1,
                 "correct": false,
-                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQicfsCW8XS87YdT70nUTrXsXZ6x0zM2TBUgnLal7idBq8UCVrAcaRfInb4P5M&s"
+                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSymGCGjWx_VKLHG1mM5yspKpQ0sLmw9kPoSA7up4mzB_fI_yonVLOIpGrcYto&s"
             }
         ]
     },
@@ -1196,10 +1168,10 @@ export const ALL_QUESTIONS  = [
                 "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkLD0wgxuCVBNFvoBcsNvpMfpQ9CbkdbMjXw6NbRvdjuf8_8c3PAZumyBjOw&s"
             },
             {
-                "text": "Valentine\u00ef\u00bf\u00bds Day",
+                "text": "Valentine's Day",
                 "no": 1,
                 "correct": false,
-                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHXxKpDH0CKQWw0Pu6Y_rT9H0Sy7_66V8Yq_eNmdrwg9SJSf4qBSZBuul4V2M&s"
+                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdR7Ek4ezw_XZx7F0IJo9Yoy7I-GZfQQB7F_jUaYuyUSMWnyznu4d1w8ozzw&s"
             },
             {
                 "text": "Birthday",
@@ -1613,7 +1585,7 @@ export const ALL_QUESTIONS  = [
                 "text": "Yes",
                 "no": 0,
                 "correct": false,
-                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfs8Oc4Kf5pSabTLj4LG6zuOddnCVBvTC3nztBwoBsGWQrvYkDfdtbCqY75fI&s"
+                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlGlO_gKuPkIHbYYC5W3sjSDi4Ivw1TEZDPRLTaEAbwyPqBE1mf7eJHzXd7ew&s"
             },
             {
                 "text": "No",
@@ -1727,7 +1699,7 @@ export const ALL_QUESTIONS  = [
                 "text": "Yes",
                 "no": 0,
                 "correct": false,
-                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfs8Oc4Kf5pSabTLj4LG6zuOddnCVBvTC3nztBwoBsGWQrvYkDfdtbCqY75fI&s"
+                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlGlO_gKuPkIHbYYC5W3sjSDi4Ivw1TEZDPRLTaEAbwyPqBE1mf7eJHzXd7ew&s"
             },
             {
                 "text": "No",
@@ -1877,7 +1849,7 @@ export const ALL_QUESTIONS  = [
                 "text": "Serious",
                 "no": 3,
                 "correct": false,
-                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo9k4T2wxthHwNrtKHPsMt2E0x8WXPGCtrf0yr_hp6kvnMupGqCbF-j9Amu_o&s"
+                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOsNw23rwRPTfJShK_9ULe8vHEjCvMJAn32Y8JmMxnwJB7iLyfvRwII0Ylx38&s"
             }
         ]
     },
@@ -1991,7 +1963,7 @@ export const ALL_QUESTIONS  = [
                 "text": "Yes",
                 "no": 0,
                 "correct": false,
-                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfs8Oc4Kf5pSabTLj4LG6zuOddnCVBvTC3nztBwoBsGWQrvYkDfdtbCqY75fI&s"
+                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlGlO_gKuPkIHbYYC5W3sjSDi4Ivw1TEZDPRLTaEAbwyPqBE1mf7eJHzXd7ew&s"
             },
             {
                 "text": "No",
@@ -2099,7 +2071,7 @@ export const ALL_QUESTIONS  = [
                 "text": "Bus",
                 "no": 2,
                 "correct": false,
-                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0c8g_PZwlyyVNsFkiI3S4QNe7mfoyxbVskIAWPUygOKLAZnNF15xADtS6OA&s"
+                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQobeQq4EwP5RGILpfJDnwMpk7vK7bTVj7_vzmoqqpqfwCtsCOfXj76KuAgnw&s"
             },
             {
                 "text": "Plane",
@@ -2237,7 +2209,7 @@ export const ALL_QUESTIONS  = [
                 "text": "Mobile",
                 "no": 2,
                 "correct": false,
-                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQicfsCW8XS87YdT70nUTrXsXZ6x0zM2TBUgnLal7idBq8UCVrAcaRfInb4P5M&s"
+                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSymGCGjWx_VKLHG1mM5yspKpQ0sLmw9kPoSA7up4mzB_fI_yonVLOIpGrcYto&s"
             },
             {
                 "text": "Password",
@@ -2369,7 +2341,7 @@ export const ALL_QUESTIONS  = [
                 "text": "Yes",
                 "no": 3,
                 "correct": false,
-                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfs8Oc4Kf5pSabTLj4LG6zuOddnCVBvTC3nztBwoBsGWQrvYkDfdtbCqY75fI&s"
+                "image_link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlGlO_gKuPkIHbYYC5W3sjSDi4Ivw1TEZDPRLTaEAbwyPqBE1mf7eJHzXd7ew&s"
             }
         ]
     },

@@ -43,3 +43,4 @@ const  order = ['1', 'A', 'a', 'B', 'b', 'C', 'c', '2', 'D', 'd', 'E', 'e', 'F',
 - [ ] Many characters that can be used are not used because of lack of research
 - [ ] The addition of `-` to specify out-of-range will work only for numbers a few multiples larger than the range after which the url will not look randomized 
 - [x] The same algorithm is not effective to specify options of questions . Since there are only a maximum of 4 options, the coded message would look less cryptic. Need to randomize it more
+    [This was problem was fixed by adding a `multiple` attribute in encode algorithm. So if we know all the elements of a list will be smaller numbers, for each element, the `multiple` is multiplied by corresponding index and it is added to the initial number. This resultant number is used for encoding]
