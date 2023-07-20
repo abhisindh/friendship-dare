@@ -82,7 +82,7 @@ function showShareLink(){
     link.classList.add('sharelink')
     link.rows = 4;
     let answered_hash = encodeIntList(globals.answered);
-    let answer_list_hash = encodeIntList(globals.answer_list);
+    let answer_list_hash = encodeIntList(globals.answer_list, 5);
     var newQueries = {
         mode : "answer",
         a : answered_hash,
@@ -92,7 +92,7 @@ function showShareLink(){
             
     link.innerHTML = updateURLWithQueries(newQueries);
     console.log(decodeIntList(answered_hash));
-    console.log(decodeIntList(answer_list_hash));
+    console.log(decodeIntList(answer_list_hash, 5));
 
     answerButtons.appendChild(link);
 }

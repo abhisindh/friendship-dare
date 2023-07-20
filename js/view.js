@@ -7,8 +7,8 @@ import { ALL_QUESTIONS } from "./questions.js";
 //http://127.0.0.1:5500/?mode=view&answered=29%252C78%252C9%252C7%252C76%252C70%252C5%252C50%252C63%252C89&answer_list=0%252C0%252C3%252C3%252C3%252C3%252C3%252C3%252C3%252C3&correct_answer=0%252C2%252C3%252C0%252C3%252C3%252C1%252C2%252C3%252C3&creator=a&friend=b
 export function viewAnswerHandler(){
     let answered = decodeIntList(getAnswered());
-    let answer_list = decodeIntList(getAnswerList());
-    let correct_answers = decodeIntList(getCorrectAnswers());
+    let answer_list = decodeIntList(getAnswerList(), 5);
+    let correct_answers = decodeIntList(getCorrectAnswers(), 5);
     let creator = getCreator();
     let friend = getFriend();
     resetState();

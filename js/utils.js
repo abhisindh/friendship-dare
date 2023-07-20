@@ -47,10 +47,12 @@ export function showQuestion(){
 //     return list;
 //   }
   
-export function encodeIntList(intList){
+export function encodeIntList(intList, multiple = 0){
   let code = ''
+  let index = 1
   intList.forEach(element => {
-      code += encodeInt(element)
+      code += encodeInt(element+(index*multiple));
+      index += 1;
   });
   return code
 }
@@ -67,17 +69,19 @@ function encodeInt(integer){
 
 
 
-export function decodeIntList(string){
+export function decodeIntList(string, multiple = 0){
   const order = ['1', 'A', 'a', 'B', 'b', 'C', 'c', '2', 'D', 'd', 'E', 'e', 'F', 'f', 'G', '3', 'g', 'H', 'h', 'I', 'i', 'J', '4', 'j', 'K', 'k', 'L', 'l', 'M', 'm', '5', 'N', 'n', 'O', 'o', 'P', 'p', '6', 'Q', 'q', 'R', 'r', 'S', 's', 'T', '7', 't', 'U', 'u', 'V', 'v', 'W', '8', 'w', 'X', 'x', 'Y', 'y', 'Z', 'z', '9']
 
   let list = []
+  let index = 1
   let offset =0
   for (var char of string){
       if (char == '-'){
           offset += 60
       }
       else{
-          list.push(order.indexOf(char) + offset)
+          list.push(order.indexOf(char) + offset - (multiple*index))
+          index += 1
           offset = 0
       }
   }

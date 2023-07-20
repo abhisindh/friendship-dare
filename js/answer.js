@@ -8,7 +8,7 @@ import { ALL_QUESTIONS } from "./questions.js";
 export function answerQuizHandler(){
     resetState();
     let answered = decodeIntList(getAnswered());
-    let answer_list = decodeIntList(getAnswerList());
+    let answer_list = decodeIntList(getAnswerList(), 5);
     let creator = getCreator();
     console.log(answered);
     console.log(answer_list);
@@ -86,7 +86,7 @@ function showShareLink(){
     link.readOnly = true
     link.classList.add('sharelink')
     link.rows = 4;
-    let answer_list_hash = encodeIntList(globals.answer_list);
+    let answer_list_hash = encodeIntList(globals.answer_list, 5);
     var newQueries = {
         mode : "view",
         a : getAnswered(),
@@ -98,8 +98,8 @@ function showShareLink(){
             
     link.innerHTML = updateURLWithQueries(newQueries);
     console.log(decodeIntList(newQueries.a));
-    console.log(decodeIntList(newQueries.b));
-    console.log(decodeIntList(newQueries.c));
+    console.log(decodeIntList(newQueries.b, 5));
+    console.log(decodeIntList(newQueries.c, 5));
 
     answerButtons.appendChild(link);
 }

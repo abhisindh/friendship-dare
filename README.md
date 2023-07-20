@@ -40,6 +40,6 @@ const  order = ['1', 'A', 'a', 'B', 'b', 'C', 'c', '2', 'D', 'd', 'E', 'e', 'F',
 ```
 
 ### Drawbacks
-- Many characters that can be used are not used because of lack of research
-- The addition of `-` to specify out-of-range will work only for numbers a few multiples larger than the range after which the url will not look randomized 
-- The same algorithm is not effective to specify options of questions . Since there are only a maximum of 4 options, the coded message would look less cryptic. Need to randomize it more
+- [ ] Many characters that can be used are not used because of lack of research
+- [ ] The addition of `-` to specify out-of-range will work only for numbers a few multiples larger than the range after which the url will not look randomized 
+- [x] The same algorithm is not effective to specify options of questions . Since there are only a maximum of 4 options, the coded message would look less cryptic. Need to randomize it more

@@ -2,6 +2,7 @@ import { getMode } from "./query.js";
 import { createQuizHandler } from "./create.js";
 import { answerQuizHandler } from "./answer.js";
 import { viewAnswerHandler } from "./view.js";
+import { ALL_QUESTIONS } from "./questions.js";
 
 
 
@@ -14,7 +15,7 @@ export const containerElement = document.getElementById("container")
 export let globals = {
     landing_page : true,
     name : "", 
-    totalQuestions : 100,
+    totalQuestions : ALL_QUESTIONS.length,
     question_numbers : [], 
     mode : getMode(),
     shown : [],
